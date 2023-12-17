@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ;
+}
+
+.wrap {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+.app {
+  width: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.app input {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.app select {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.font4 {
+  font-size: 4px;
+}
+
+.app button {
+  border: none;
+  outline: none;
+  padding: 12px 47px;
+  color: #fff;
+  background: #f44336;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.app button:hover {
+  background: #a5251c;
+}
+
+@media screen and (max-width: 500px) {
+  .input,
+  .percentage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}

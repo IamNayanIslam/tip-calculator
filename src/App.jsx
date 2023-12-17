@@ -1,5 +1,11 @@
+import TipCal from "./Components/TipCal/TipCal";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <TipCal />
+    </>
+  );
 }
 
 export default App;
