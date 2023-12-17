@@ -1,5 +1,5 @@
 export default function Output({ bill, per1, per2 }) {
-  const tip = (per1 + per2) / 2;
+  const tip = (bill * (per1 + per2)) / 2 / 100;
 
   const total = bill + tip;
 

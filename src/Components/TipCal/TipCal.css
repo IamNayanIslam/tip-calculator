@@ -57,6 +57,11 @@
   background: #a5251c;
 }
 
+.app button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 @media screen and (max-width: 500px) {
   .input,
   .percentage {

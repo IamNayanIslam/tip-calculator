@@ -1,7 +1,9 @@
-export default function Reset({ reset }) {
+export default function Reset({ reset, total }) {
   return (
     <div>
-      <button onClick={reset}>Reset</button>
+      <button onClick={reset} disabled={total > 0 ? false : true}>
+        Reset
+      </button>
     </div>
   );
 }

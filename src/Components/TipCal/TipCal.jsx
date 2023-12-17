@@ -10,6 +10,8 @@ export default function TipCal() {
   const [percentage1, setPercentage1] = useState(0);
   const [percentage2, setPercentage2] = useState(0);
 
+  const total = billAmount + (percentage1 + percentage2);
+
   const handleReset = () => {
     setBillAmount("");
     setPercentage1(0);
@@ -35,7 +37,7 @@ export default function TipCal() {
             How did your friend like the servie?
           </SelectPercentage>
           <Output bill={billAmount} per1={percentage1} per2={percentage2} />
-          <Reset reset={handleReset} />
+          <Reset reset={handleReset} total={total} />
         </div>
       </div>
     </>
