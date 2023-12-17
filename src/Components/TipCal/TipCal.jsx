@@ -23,6 +23,7 @@ export default function TipCal() {
     <>
       <div className="wrap">
         <div className="app">
+          <h2>Tip Calculator</h2>
           <BillInput billAmount={billAmount} setBillAmount={setBillAmount} />
           <SelectPercentage
             percentage={percentage1}
