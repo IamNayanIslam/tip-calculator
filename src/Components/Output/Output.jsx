@@ -6,9 +6,9 @@ export default function Output({ bill, per1, per2 }) {
   return (
     <div>
       {total > 0 ? (
-        <h2>
+        <h3>
           You pay ${total} (${bill} bill + ${tip} tip)
-        </h2>
+        </h3>
       ) : (
         <h3>Add Bill Amount & Tip</h3>
       )}
